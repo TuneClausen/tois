@@ -3,8 +3,8 @@ version: '3.8' # Use a specific version for consistency
 services:
   db:
     image: postgis/postgis:16-3.4 # Specific image: Postgres 16, PostGIS 3.4
-    container_name: pg-tois # A friendly name for the container
-    restart: unless-stopped # Or 'always' if you prefer
+    container_name: pg-tois
+    restart: unless-stopped
     environment:
       # These variables are used by the postgres image to initialize the DB
       # Use environment variables from a .env file (see next step) for security
